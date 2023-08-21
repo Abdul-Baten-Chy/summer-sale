@@ -72,7 +72,7 @@
                                 <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                          <h3 class="card-title text-center mx-auto mb-2">K. Accessories</h3>
+                          <h3 class="card-title text-center mx-auto mb-2" id="nam-one">K. Accessories</h3>
                           <p class="text-center mb-5"> <span id="card-one-amount">39.00</span> TK</p>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked//>
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                          <h3 class="card-title text-center mx-auto mb-2">K. Accessories</h3>
+                          <h3 class="card-title text-center mx-auto mb-2" id="nam-two">K. Accessories</h3>
                           <p class="text-center mb-5"> <span id="card-two-amount">25.00</span> TK</p>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                                 <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                          <h3 class="card-title text-center mx-auto mb-2">Home Cooker</h3>
+                          <h3 class="card-title text-center mx-auto mb-2" id="nam-three">Home Cooker</h3>
                           <p class="text-center mb-5"> <span id="card-three-amount">49.00</span> TK</p>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                                 <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                          <h3 class="card-title text-center mx-auto mb-2">Sports Back Cap</h3>
+                          <h3 class="card-title text-center mx-auto mb-2" id="nam-four">Sports Back Cap</h3>
                           <p class="text-center mb-5"> <span id="card-four-amount">49.00</span> TK</p>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked//>
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                          <h3 class="card-title text-center mx-auto mb-2">Full Jersey Set</h3>
+                          <h3 class="card-title text-center mx-auto mb-2" id="nam-five">Full Jersey Set</h3>
                           <p class="text-center mb-5"> <span id="card-five-amount">69.00</span> TK</p>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                                 <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
                             </div>
-                          <h3 class="card-title text-center mx-auto mb-2">Sports cates</h3>
+                          <h3 class="card-title text-center mx-auto mb-2" id="nam-six">Sports cates</h3>
                           <p class="text-center mb-5"> <span id="card-six-amount">159.00</span> TK</p>
                         </div>
                     </div>             
@@ -168,7 +168,12 @@
                 <input id="coupn" type="text" placeholder="Coupon code" class="w-[130px] h-[45px] border rounded-md"><button id="apply" class="btn bg-[#E527B2] text-white font-semibold text-lg" disabled="disabled">Apply</button>
             </div>
             <div class="cart w-80 mt-5 p-4 bg-white mx-auto relative">
-                <p class="text-lg text-[#111] font-medium my-4">selected product</p>
+                <div >
+                    <p class="text-lg text-[#111] font-medium my-4">selected product</p>
+                </div>
+                <div id="product-list">
+
+                </div>
                 <hr>
                 <p class="text-lg text-[#111] font-medium my-4">Total price: <span id="total-price">00.00</span>TK</p>
                 <p class="text-lg text-[#111] font-medium my-4">Discount : <span id="discount">00.00</span>TK</p>

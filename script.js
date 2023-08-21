@@ -9,6 +9,15 @@ function setValue(element, value){
     document.getElementById(element).innerText = value;
 }
 
+function showProductList(first){
+   const parentConatiner = document.getElementById('product-list');
+   const count = parentConatiner.childElementCount;
+   const newElement = document.createElement("p");
+   newElement.innerHTML= `${count+ 1} ${first}`
+   parentConatiner.appendChild(newElement);
+
+}
+
 
 document.getElementById('card-one').addEventListener('click', function(){
    const cardOneAmount = getValue('card-one-amount');
@@ -16,8 +25,10 @@ document.getElementById('card-one').addEventListener('click', function(){
    const sum = cardOneAmount + totalPrice;
    const sumNumber = sum.toFixed(2);
    setValue('total-price', sumNumber);
+   const productName = document.getElementById('nam-one').innerText;
 
-  
+   showProductList(productName);
+
 })
 
 document.getElementById('card-two').addEventListener('click', function(){
@@ -26,7 +37,9 @@ document.getElementById('card-two').addEventListener('click', function(){
     const sum = cardTwoAmount + totalPrice;
     const sumNumber = sum.toFixed(2);
     setValue('total-price', sumNumber);
- 
+    const productName = document.getElementById('nam-two').innerText;
+
+    showProductList(productName);
 
  })
 
@@ -36,6 +49,9 @@ document.getElementById('card-two').addEventListener('click', function(){
     const sum = cardthreeAmount + totalPrice;
     const sumNumber = sum.toFixed(2);
     setValue('total-price', sumNumber);
+    const productName = document.getElementById('nam-three').innerText;
+
+    showProductList(productName);
  
 
  })
@@ -46,7 +62,9 @@ document.getElementById('card-two').addEventListener('click', function(){
     const sum = cardthreeAmount + totalPrice;
     const sumNumber = sum.toFixed(2);
     setValue('total-price', sumNumber);
- 
+    const productName = document.getElementById('nam-four').innerText;
+
+    showProductList(productName);
 
  })
 
@@ -56,7 +74,9 @@ document.getElementById('card-two').addEventListener('click', function(){
     const sum = cardthreeAmount + totalPrice;
     const sumNumber = sum.toFixed(2);
     setValue('total-price', sumNumber);
- 
+    const productName = document.getElementById('nam-five').innerText;
+
+    showProductList(productName);
 
  })
 
@@ -66,6 +86,9 @@ document.getElementById('card-two').addEventListener('click', function(){
     const sum = cardthreeAmount + totalPrice;
     const sumNumber = sum.toFixed(2);
     setValue('total-price', sumNumber);
+    const productName = document.getElementById('nam-six').innerText;
+
+    showProductList(productName);
  
 
  })
